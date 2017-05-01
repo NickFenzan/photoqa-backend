@@ -3,14 +3,12 @@ package com.millervein.photoqa.core;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class BadPhoto {
 	@Id
-	@GeneratedValue
-	private Integer id;
+	private String id;
 	private PatientInfo patient;
 	private String reviewer;
 	private LocalDate dateOfService;
@@ -18,7 +16,7 @@ public class BadPhoto {
 	private String legArea;
 	private PhotoProblems problems;
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
