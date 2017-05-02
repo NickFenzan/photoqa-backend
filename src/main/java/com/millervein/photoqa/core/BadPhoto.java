@@ -15,6 +15,7 @@ public class BadPhoto {
 	private String photographer;
 	private String legArea;
 	private PhotoProblems problems;
+	private LocalDate reviewedDate = LocalDate.now();
 
 	public String getId() {
 		return id;
@@ -42,5 +43,9 @@ public class BadPhoto {
 
 	public PhotoProblems getProblems() {
 		return problems;
+	}
+
+	public LocalDate getReviewedDate() {
+		return reviewedDate;
 	}
 }

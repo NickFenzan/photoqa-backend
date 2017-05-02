@@ -13,6 +13,7 @@ public class ReviewedData {
 	private PatientInfo patient;
 	private String reviewer;
 	private LocalDate dateOfService;
+	private LocalDate reviewDate = LocalDate.now();
 
 	public Integer getId() {
 		return id;
@@ -28,5 +29,9 @@ public class ReviewedData {
 
 	public LocalDate getDateOfService() {
 		return dateOfService;
+	}
+
+	public LocalDate getReviewDate() {
+		return reviewDate;
 	}
 }
